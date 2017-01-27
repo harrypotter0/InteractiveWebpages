@@ -10,7 +10,7 @@ text-align: center;
 color: white;
 }
 input[type="submit"]{
-border: 0;padding: 10px;
+border: 4;padding: 10px;color: red;
 }
 h1{
 font-size:40px;
@@ -22,11 +22,12 @@ background: black;
 li{
 display: inline;
 padding: 0px 10px 0px 10px;
+text-color: red;
 }
 img{
 border: 10px solid white;
 border-radius: 20px;
-
+margin: 40px 0px 0px 0px;
 }
 article{
 max-width: 500px;
@@ -34,12 +35,26 @@ text-align:center;
 padding: 20px;
 margin: 0 auto;
 }
+@media(max-width: 500px){
+body{
+background: red;
+}
+h1{
+font-size: 30px;
+}
+li{
+display: block;
+padding: 5px;
+}
+$("button").on("click",function(){
+alert("clicked!!")
+});}
 </style>
 </head>
 <body>
 <header>
 
-<img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15727200_1799803693607849_6282805375017922691_n.jpg?oh=0698d5d44f0a472da1cdbc3d6bfd2614&oe=592003F3" height= 300px width= 300px>
+<img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15727200_1799803693607849_6282805375017922691_n.jpg?oh=0698d5d44f0a472da1cdbc3d6bfd2614&oe=592003F3" height= 200px width= 200px>
 
 <h1>Kandpal's Blog</h1>
 <ul>
@@ -49,22 +64,29 @@ margin: 0 auto;
 </ul>
 
 <article>
-<p>I'm a Coder!!!</p>
+<p>I'm a Coder!!!</p><button>Like</button>
 </article>
 
 <article><p>I would like to do some research work on entity resolution ,coherence models ,computational work on metaphor . Currently i have read many research papers on these topics and made some research from my side but i am unable to understand few things and looking for answers to some questions therefore i am looking for a research work under a professor .
 </p>
+<button>Like</button>
 </article>
 
 <article>
 <p>
 I would like to do some research work on entity resolution ,coherence models ,computational work on metaphor . Currently i have read many research papers on these topics and made some research from my side but i am unable to understand few things and looking for answers to some questions therefore i am looking for a research work under a professor .
-</p>
+</p><button>Like</button>
 </article>
 
 <input type="email" placeholder="Your email">
 <input type="submit">
 </header>
+<script>
+alert("Javascript kaam kr rhha hai !!")
+$("button").on("click",function(){
+alert("clicked!!")
+});
+</script>
 </body>
 </html>
 
