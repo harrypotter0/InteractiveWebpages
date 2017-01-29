@@ -1,93 +1,80 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-<title>MY BLOG</title>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <style>
-body{
-background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBa_TUGXXE6lASy3QA3rbYWZzap8u1DZQ8YbtaMCnzbkmt4BQoMg");
-background-size: cover;
-text-align: center;
-color: white;
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
 }
-input[type="submit"]{
-border: 4;padding: 10px;color: red;
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
 }
-h1{
-font-size:40px;
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
 }
-ul{
-padding: 10px;
-background: black;
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
 }
-li{
-display: inline;
-padding: 0px 10px 0px 10px;
-text-color: red;
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
 }
-img{
-border: 10px solid white;
-border-radius: 20px;
-margin: 40px 0px 0px 0px;
+
+.first{
+  background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
 }
-article{
-max-width: 500px;
-text-align:center;
-padding: 20px;
-margin: 0 auto;
+.second{
+  background-image: url("http://dash.ga.co/assets/secondcourse.jpg");
 }
-@media(max-width: 500px){
-body{
-background: red;
+.dessert{
+  background-image: url("http://dash.ga.co/assets/dessertcourse.jpg");
 }
-h1{
-font-size: 30px;
+.price {
+  float: right;
 }
-li{
-display: block;
-padding: 5px;
-}
-$("button").on("click",function(){
-alert("clicked!!")
-});}
 </style>
+
 </head>
+
 <body>
-<header>
+<h1>esha's restaurant</h1>
+<h2>a New York City eatery</h2>
+<div class="first">
+  <p>welsh onion soko <span class="price">$14</span><br />
+  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+</div>
 
-<img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15727200_1799803693607849_6282805375017922691_n.jpg?oh=0698d5d44f0a472da1cdbc3d6bfd2614&oe=592003F3" height= 200px width= 200px>
+<div class="second">
+  <p>pastrami boudin tongue <span class="price">$22</span><br />
+  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
+  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
 
-<h1>Kandpal's Blog</h1>
-<ul>
-<li><a href= "https://www.quora.com/profile/Akash-Kandpal">Quora Profile</a></li>
-<li><a href= "https://github.com/harrypotter0">Github Profile</a></li>
-<li><a href= "http://codeforces.com/profile/HARRYPOTTER0">Codeforces Account</a></li>
-</ul>
-
-<article>
-<p>I'm a Coder!!!</p><button>Like</button>
-</article>
-
-<article><p>I would like to do some research work on entity resolution ,coherence models ,computational work on metaphor . Currently i have read many research papers on these topics and made some research from my side but i am unable to understand few things and looking for answers to some questions therefore i am looking for a research work under a professor .
-</p>
-<button>Like</button>
-</article>
-
-<article>
-<p>
-I would like to do some research work on entity resolution ,coherence models ,computational work on metaphor . Currently i have read many research papers on these topics and made some research from my side but i am unable to understand few things and looking for answers to some questions therefore i am looking for a research work under a professor .
-</p><button>Like</button>
-</article>
-
-<input type="email" placeholder="Your email">
-<input type="submit">
-</header>
-<script>
-alert("Javascript kaam kr rhha hai !!")
-$("button").on("click",function(){
-alert("clicked!!")
-});
-</script>
 </body>
-</html>
-
 
